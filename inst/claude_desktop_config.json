@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "my-ontology": {
+      "command": "Rscript",
+      "args": [
+        "-e",
+        "ontologyMCP::serve_mcp(ontologySpecR::read_bundle('path/to/bundle.json'), DBI::dbConnect(duckdb::duckdb(), 'path/to/data.duckdb'))"
+      ],
+      "env": {}
+    }
+  }
+}

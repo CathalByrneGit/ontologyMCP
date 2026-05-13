@@ -1,0 +1,33 @@
+Package: ontologyMCP
+Title: Model Context Protocol Server for Ontology-Based R Packages
+Version: 0.1.0
+Authors@R:
+    person("Cathal", "Byrne", role = c("aut", "cre"),
+           email = "cathal@example.com")
+Description: Implements an MCP server that exposes ontology object types,
+    object set queries, link traversal, concept evaluation, and action
+    submission as MCP tools. Enables any MCP-compatible LLM agent to
+    interact with your ontology data without writing R code.
+Depends: R (>= 4.0)
+Imports:
+    ontologySpecR,
+    objectSetsR,
+    actionTypesR,
+    jsonlite,
+    rlang,
+    cli,
+    later,
+    promises
+Suggests:
+    conceptR,
+    auditR,
+    duckdb,
+    httpuv,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
